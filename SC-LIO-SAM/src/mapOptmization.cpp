@@ -1,6 +1,6 @@
 #include "utility.h"
 
-#include "lio_sam/cloud_info.h"
+#include "sc_lio_sam/cloud_info.h"
 
 #include <gtsam/geometry/Rot3.h>
 #include <gtsam/geometry/Pose3.h>
@@ -27,6 +27,8 @@ using symbol_shorthand::X; // Pose3 (x,y,z,r,p,y)
 using symbol_shorthand::V; // Vel   (xdot,ydot,zdot)
 using symbol_shorthand::B; // Bias  (ax,ay,az,gx,gy,gz)
 using symbol_shorthand::G; // GPS pose
+
+namespace lio_sam = sc_lio_sam;
 
 
 void saveOptimizedVerticesKITTIformat(gtsam::Values _estimates, std::string _filename)

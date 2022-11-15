@@ -1,5 +1,7 @@
 #include "utility.h"
-#include "lio_sam/cloud_info.h"
+#include "sc_lio_sam/cloud_info.h"
+
+namespace lio_sam = sc_lio_sam;
 
 struct smoothness_t{ 
     float value;
